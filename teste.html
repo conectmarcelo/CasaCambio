@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="public/js/jquery-3.4.1.min.js"></script>
+
+<script src="public/js/jquery.js"></script>
+<script src="public/js/bootstrap.bundle.min.js"></script>
+  
+  <meta charset="utf-8">
+  <title>JS Bin</title>
+  <script>
+    $(document).ready(function(){
+      $("tr").click(function(){
+        $(this).find('td').each(function(i) {
+          $th = $("thead th")[i];
+          alert(jQuery($th).text() + ": " + $(this).html())
+        });                  
+      })
+    });
+  </script>
+</head>
+<body>
+  <table>
+    <thead>
+      <th>Nome</th>
+      <th>Idade</th>
+      <th>Peso</th>
+    </thead>
+    </tbody>
+      <tr>
+        <td>Andre</td>
+        <td>25</td>
+        <td>99</td>
+      </tr>
+      <tr>
+        <td>Patricia</td>
+        <td>33</td>
+        <td>53</td>
+      </tr>
+      <tr>
+        <td>Ana</td>
+        <td>23</td>
+        <td>65</td>
+      </tr>
+      <tr>
+        <td>Danilo</td>
+        <td>30</td>
+        <td>80</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+
+
+</body>
